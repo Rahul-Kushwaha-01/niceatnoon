@@ -1,0 +1,344 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+html,body {
+height: 100%;
+width: 100%;
+}
+
+@font-face {
+    font-family:noon1 ;
+    src: url(https://cdn.prod.website-files.com/6454cbf2dcc426c6ec47ef06/6479b994523a6279a03d4da7_Siaga-Bold.woff2);
+}
+
+@font-face {
+    font-family:noon2 ;
+    src: url(https://cdn.prod.website-files.com/6454cbf2dcc426c6ec47ef06/64eda5e581cb8e58ed55dea5_apercu-medium.woff2);
+}
+
+@font-face {
+    font-family:noon3 ;
+    src: url(https://cdn.prod.website-files.com/6454cbf2dcc426c6ec47ef06/64eda5e5fdd71ddd3dbbf609_apercu-regular.woff2);
+}
+
+@font-face {
+    font-family: noon4;
+    src: url(https://use.typekit.net/af/af5a5b/0000000000000000774c4d95/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3);
+}
+
+@font-face {
+    font-family: noon5;
+    src: url(https://use.typekit.net/af/61489c/0000000000000000774c4d91/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3);
+}
+
+#nav-part3 button{
+    font-family: noon3;
+}
+
+#page-2btn{
+    /* display: inline-block;  */
+    position: relative;
+}
+
+#page-2btn h1::after{
+    content: "";
+    height: 1.5px;
+    width: 55%;
+    background-color: black;
+    position: absolute;
+    bottom: 12px;
+    left:25px;
+    display: none;
+}
+
+#page-2btn h1:hover::after{
+    animation-name: anime;
+    animation-duration: 1s;
+    display: block;
+}
+
+@keyframes anime {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+
+#page-3{
+    height: 90vh;
+    width: 100vw;
+    background-color: #E4E4E4;
+    max-width: 100%;
+    
+}
+
+.scrolling {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.scroll {
+    height: 70vh;
+    width: 30vw;
+    background-color: transparent;
+    border-radius: 20%;
+    flex-shrink: 0;
+    margin-right: 40px;
+    transform: translate(-100%);
+}
+#page-4{
+    height: 100vh;
+    max-width: 100vw;
+    background-color:#E4E4E4 ;
+}
+
+#page4-btn{
+    position: relative;
+}
+
+#page4-btn p::before{
+    content: "";
+    height: 2px;
+    width: 55%;
+    background-color: black;
+    position: absolute;
+    bottom: 10px;
+    display: none;
+    
+}
+
+#page4-btn p:hover::before{
+    animation-name: anime2;
+    animation-duration: 1s;
+    display: block;
+}
+
+@keyframes anime2 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+#alle button{
+    position: relative;
+    
+}
+
+#alle button p::before{
+    content: "";
+    height: 2px;
+    width: 60%;
+    background-color: black;
+    position: absolute;
+    bottom: 8px;
+    display: none; 
+}
+
+#alle button p:hover::before{
+    animation-name: anime3;
+    animation-duration: 1s;
+    display: block;
+}
+
+@keyframes anime3 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+    
+}
+
+#inner{
+    z-index:50;
+    display: none;
+}
+
+.page-5 #page5-top:hover #inner{
+    display: block;
+}
+
+#page6-btn{
+    position: relative;
+}
+
+#page6-btn p::before{
+    content: "";
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 8px;
+    display: none; 
+}
+
+#page6-btn:hover{
+    border-radius: 50px;
+    transition: all ease-in 1s;
+}
+
+#page6-btn p:hover::before{
+    display: block;
+    animation-name: anime4;
+    animation-duration: 1s;
+}
+    
+@keyframes anime4 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+.page6-left-top img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page6-left-top:hover img{
+    scale: 1.5;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 5s;
+}
+
+.page6-left-top:hover{
+    border-radius: 50px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 5s;
+}
+.page6-inner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page6-inner{
+    z-index: 999;
+    display: none;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 3s;
+}
+.page6-left-top:hover .page6-inner{
+    display: block;
+}
+
+.page6-right-top img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.page6-right-top-inner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page6-right-top{
+    overflow: hidden;
+}
+.page6-right-top-inner{
+    overflow: hidden;
+    z-index: 50;
+    display: none;
+}
+.page6-right-top:hover .page6-right-top-inner{
+    display: block;
+}
+.page6-right-top:hover{
+    border-radius: 70px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 5s;
+}
+.page6-right-top:hover img{
+    scale: 1.5;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 5s;
+}
+
+.page7-top button{
+    position: relative;
+}
+.page7-top button h6::before{
+    content: "";
+    background-color: white;
+    width: 55%;
+    height: 2px;
+    position: absolute;
+    bottom: 8px;
+    display: none;
+}
+.page7-top button:hover h6::before{
+    animation-name: anime5;
+    animation-duration: 1s;
+    display: block;
+}
+
+@keyframes anime5 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+.page-8 button{
+    position: relative;
+}
+.page-8 button h6::before{
+    content: "";
+    height: 2px;
+    width: 55%;
+    background-color: white;
+    position: absolute;
+    bottom: 8px;
+    display: none;
+}
+.page-8 button:hover h6::before{
+    display: block;
+    animation-name: anime6;
+    animation-duration: 1s;
+}
+@keyframes anime6 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+.lets button{
+    position: relative;
+    /* background-color: red; */
+}
+.lets button h6::before{
+    content: "";
+    width: 55%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 8px;
+    display: none;
+}
+.lets button:hover h6::before{
+    display: block;
+    animation-name: anime7;
+    animation-duration: 1s;
+}
+@keyframes anime7 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 55%;
+    }
+}
